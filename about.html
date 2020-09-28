@@ -1,0 +1,188 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+*{
+
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+body{
+	background-color: #000000;
+	   
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  align-self: center;
+}
+
+.card {
+  margin: 8px;
+
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}.menu{
+	background: #000000;
+	height: 90px;
+}
+.menu ul{
+	display: inline-flex;
+	margin: 50px;
+	
+
+}
+.menu ul li{
+	list-style: none;
+	margin: 0 20px;
+	color: #b2b1b1;
+	cursor: pointer;
+	align-content: center;
+
+
+
+}
+ 
+  a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: #ff0000;
+}
+
+a:active {
+    text-decoration: #ffffff;
+}
+.logo img{
+  width: 40px;
+  margin-top: -13px;
+  margin-right: 48px;
+}
+
+.active{
+	color: #ffffff !important;
+
+}
+.button:hover {
+  background-color: #555;
+}
+.banner{
+	width: 80%;
+	height: 70%;
+	top: 25%;
+	left: 130px;
+	position: absolute;
+	color: #fff;
+
+}
+.app-text
+{
+	width: 50%;
+	float: left;
+
+}
+.app-text h1 h2 h3{
+	font-size: 43px;
+	width: 640px;
+	position: relative;
+	margin-left: 40px;
+}
+.app-text p{
+	font-size: 15px;
+	width: 650px;
+	line-height: 25px;
+	margin: 30px 0 30px 40px;
+	color: #ffffff;
+}
+.image{
+	  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 75%;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="menu">
+		<ul>
+			<li class="logo"><img src="https://www.mercedes-benz.com/etc/designs/brandhub/frontend/static-assets/header/logo.svg"></li>
+			<li ><a href="index.html">Home</a> </li>
+		 	<li class="active">About </a></li>
+			<li><a href="contact.html">Contact </a></li>
+		</ul>
+	</div>
+	<div>
+		<img class="image" src="https://www.mercedes-benz.com/en/vehicles/passenger-cars/mercedes-benz-concept-cars/vision-avtr/_jcr_content/root/slider_833502777/sliderchilditems/slideritem_141033694_341372895/image/MQ7-0-image-20200107144029/14-mercedes-benz-vehicles-concept-cars-vision-avtr-3400x1440.jpeg">
+
+	</div>
+	
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="aki.jpg" alt="Jane" style="width:50%">
+      <div class="container1"style="width:50%" >
+        <h2 style="color: #ffffff">Akilesh.M</h2>
+        <p style="color: #ffffff">Developer</p>
+        <p style="color: #ffffff">BNM Institute of Technology</p>
+        <p style="color: #ffffff">akilesh.m10@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+</body>
+</html>

@@ -2,7 +2,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style1.css">
-  <style type="text/css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <style type="text/css">
   body{
   
       background-position: center;
@@ -129,12 +130,18 @@ line-height: 25px;
   display: block;
 
   }
-  
+  .mute{
+   right: 72px;
+  bottom: 35px;
+  position: absolute;
+  color: #FFFFFF;
+}
   a:link {
     text-decoration: none;
 }
   </style>
 </head>
+
 <body >
 <div class="container">
 
@@ -147,10 +154,7 @@ line-height: 25px;
     </ul>
   </div>
 
-<video autoplay loop>
-  <!-- 
-- Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
-WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<video id="video1"  autoplay muted loop>
   <source src="mb.mp4" type="video/mp4">
 
 </video>
@@ -161,7 +165,18 @@ WCAG general accessibility recommendation is that media such as background video
     </div>
     
   </div>
+<div class="mute">
+      <button id="bu" class="fas fa-volume-mute" style="font-size:24px" onclick="disbleMute()" type="button"></button> 
+</div>
+<script type="text/javascript">
+  var video = document.getElementById('video1');
+  var button = document.getElementById('bu');
 
+ function disbleMute() {
+            video.muted = false;
+    button.visibility=hidden;
+          }
+</script>
 </div>
 
 </body>
